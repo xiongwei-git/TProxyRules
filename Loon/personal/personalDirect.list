@@ -1,0 +1,5 @@
+# Personal public direct rules.
+# The Remote Rule declaration supplies policy=DIRECT.
+
+DOMAIN-SUFFIX,spaceship.com
+DOMAIN-SUFFIX,ingeek.com

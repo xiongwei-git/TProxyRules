@@ -1,0 +1,6 @@
+# Personal proxy rules that use the Available policy.
+
+DOMAIN-SUFFIX,nodeseek.com
+DOMAIN-SUFFIX,qatarairways.com
+DOMAIN-SUFFIX,v2cb.com
+DOMAIN-SUFFIX,wireguard.com
