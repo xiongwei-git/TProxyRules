@@ -1,0 +1,35 @@
+name: Update public rules
+on:
+  schedule:
+    - cron: '23 22 * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: update-public-rules
+  cancel-in-progress: false
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check public sources
+        id: sync
+        continue-on-error: true
+        run: python scripts/update_rules.py
+      - name: Commit validated updates
+        run: |
+          git add -- Loon/Google.list Loon/YouTube.list Loon/Telegram.list Loon/GlobalAI.list Loon/Global.list Loon/ProxyGFWlist.list
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore: sync public Loon rules"
+            git push
+          fi
+      - name: Report failed sources
+        if: steps.sync.outcome == 'failure'
+        run: exit 1

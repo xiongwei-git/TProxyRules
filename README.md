@@ -52,7 +52,7 @@ https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/ProxyGFWlis
 
 8. [ProxyGFWlist.list](Loon/ProxyGFWlist.list)
 
-   迁移自 [xiongwei-git/ProxyRules 的 Clash/ProxyGFWlist.list](https://raw.githubusercontent.com/xiongwei-git/ProxyRules/master/Clash/ProxyGFWlist.list)。旧仓库有生成工作流；本仓库目前保存快照，未迁移自动生成任务。
+   自动同步 [ACL4SSR 的 Clash/ProxyGFWlist.list](https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list)，不依赖旧仓库。
 
 ### Passwall2
 
@@ -76,6 +76,8 @@ https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/ProxyGFWlis
 
 2026-09-11 从 [xiongwei-git/ProxyRules](https://github.com/xiongwei-git/ProxyRules/tree/10249fa831607c3988f44eeabc59eea8c6cee667) 提交 `10249fa831607c3988f44eeabc59eea8c6cee667` 迁移，8 份规则保留源文件内容和名称。仅 ProxyGFWlist 从 `Clash/` 移入 `Loon/`。不恢复已删除的 Bybit 清单。
 
-未来更新时，根据上面的参考地址获取最新文件，与当前文件对比后审查增删及规则类型，再更新并提交。个人清单独立维护，不被上游覆盖。本次未重新同步第三方上游；迁移日期不代表上游规则更新日期。部分上游注释统计可能与正文不一致，以实际规则为准。
+2026-09-13 起，GitHub Actions 每天北京时间 06:23 检查上述 6 份公共规则（调度可能延迟），有变化才提交。可在 Actions → Update public rules → Run workflow 手动运行。来源映射在 `scripts/update_rules.py`，`personal/` 不参与更新。
+
+每个来源独立校验：下载失败、空文件、未知规则类型、格式异常，或规则数减少超过 20% / 增长超过 100% 时保留原文件；其他通过校验的列表正常提交，任务最后标记失败，在运行摘要中列明异常。失败通知取决于你的 GitHub Actions 通知设置。无变更不提交，可通过 Git 历史回滚错误更新。部分上游注释统计可能与正文不一致，以实际规则为准。旧仓库的生成脚本不在本仓库运行。
 
 保留源文件中的作者及来源声明，并保留旧仓库的 [LICENCE](LICENCE)。第三方规则的使用和再分发同时遵循各原项目许可及声明。
