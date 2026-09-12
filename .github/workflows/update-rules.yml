@@ -3,6 +3,13 @@ on:
   schedule:
     - cron: '23 22 * * *'
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'Loon/**'
+      - 'scripts/convert_passwall2.py'
+      - 'scripts/test_convert_passwall2.py'
+      - '.github/workflows/update-rules.yml'
 permissions:
   contents: write
 concurrency:
@@ -21,9 +28,14 @@ jobs:
         id: sync
         continue-on-error: true
         run: python scripts/update_rules.py
+      - name: Convert Passwall2 rules
+        run: |
+          python -m unittest discover -s scripts -p 'test_*.py'
+          python scripts/convert_passwall2.py
       - name: Commit validated updates
         run: |
           git add -- Loon/Google.list Loon/YouTube.list Loon/Telegram.list Loon/GlobalAI.list Loon/Global.list Loon/ProxyGFWlist.list
+          git add -- Passwall2
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

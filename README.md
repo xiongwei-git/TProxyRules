@@ -56,9 +56,9 @@ https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/ProxyGFWlis
 
 ### Passwall2
 
-计划支持，当前尚未生成 Passwall2 规则或提供可用订阅。后续根据实际版本、核心与分流配置适配并验证，不能直接把 Loon 格式当作 Passwall2 规则使用。
+已提供独立的 [Passwall2/](Passwall2/README.md) 目录：每个分类分为域名 `.list` 和 IP `.ip.list`，分别粘贴到分流规则的对应输入框。完整用法、来源及转换限制见该目录说明。仓库每日自动生成，尚未配置路由器端自动拉取或实机验证。
 
-计划目录及来源：
+主要文件及来源：
 
 1. `Passwall2/personal/personalDirect.list`、`Passwall2/personal/personalProxy.list`
 
