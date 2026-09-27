@@ -4,3 +4,9 @@
 DOMAIN-SUFFIX,spaceship.com
 DOMAIN-SUFFIX,ingeek.com
 DOMAIN,launcher.keychron.com
+
+# Teams core endpoints; shared sign-in, Office services and IP media are not overridden.
+# https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges
+DOMAIN-SUFFIX,teams.microsoft.com
+DOMAIN-SUFFIX,teams.cloud.microsoft
+DOMAIN-SUFFIX,lync.com

@@ -280,12 +280,12 @@
     ]
   },
   "personal/personalDirect.list": {
-    "domains": 3,
+    "domains": 6,
     "ips": 0,
     "skipped": []
   },
   "personal/personalProxy.list": {
-    "domains": 14,
+    "domains": 20,
     "ips": 0,
     "skipped": []
   }

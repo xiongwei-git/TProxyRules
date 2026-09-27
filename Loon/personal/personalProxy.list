@@ -14,3 +14,12 @@ DOMAIN,storage.googleapis.com
 DOMAIN,registry.npmjs.org
 DOMAIN,files.pythonhosted.org
 DOMAIN-SUFFIX,hlbdy1.com
+
+# Outlook / Hotmail mail endpoints. Shared Microsoft sign-in remains unchanged.
+# https://learn.microsoft.com/en-us/microsoft-365/enterprise/urls-and-ip-address-ranges
+DOMAIN-SUFFIX,outlook.com
+DOMAIN-SUFFIX,hotmail.com
+DOMAIN,outlook.live.com
+DOMAIN,outlook.office.com
+DOMAIN,outlook.office365.com
+DOMAIN,outlook.cloud.microsoft
