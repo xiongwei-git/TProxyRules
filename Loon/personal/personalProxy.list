@@ -10,3 +10,7 @@ DOMAIN-SUFFIX,v2rayssr.com
 DOMAIN-SUFFIX,sublimetext.com
 DOMAIN-SUFFIX,sublimehq.com
 DOMAIN-SUFFIX,muse.ai
+DOMAIN,storage.googleapis.com
+DOMAIN,registry.npmjs.org
+DOMAIN,files.pythonhosted.org
+DOMAIN-SUFFIX,hlbdy1.com
