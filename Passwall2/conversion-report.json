@@ -1,7 +1,7 @@
 {
   "Global.list": {
     "domains": 26,
-    "ips": 97,
+    "ips": 100,
     "skipped": [
       {
         "line": 38,
