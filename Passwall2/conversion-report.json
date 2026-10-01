@@ -46,7 +46,7 @@
     ]
   },
   "GlobalAI.list": {
-    "domains": 300,
+    "domains": 305,
     "ips": 6,
     "skipped": [
       {
@@ -130,52 +130,52 @@
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 389,
+        "line": 394,
         "rule": "PROCESS-NAME,ChatGPT",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 390,
+        "line": 395,
         "rule": "PROCESS-NAME,ChatGPT.exe",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 391,
+        "line": 396,
         "rule": "PROCESS-NAME,Codex",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 392,
+        "line": 397,
         "rule": "PROCESS-NAME,Codex.exe",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 393,
+        "line": 398,
         "rule": "PROCESS-NAME,chatgpt",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 394,
+        "line": 399,
         "rule": "PROCESS-NAME,codex",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 401,
+        "line": 406,
         "rule": "IP-ASN,401518,no-resolve",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 504,
+        "line": 509,
         "rule": "PROCESS-NAME,Windsurf",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 505,
+        "line": 510,
         "rule": "PROCESS-NAME,Windsurf.exe",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 506,
+        "line": 511,
         "rule": "PROCESS-NAME,windsurf",
         "reason": "No equivalent in domain_list/ip_list"
       }
