@@ -44,6 +44,7 @@ full:servd-anthropic-website.b-cdn.net
 full:storage.googleapis.com
 domain:anthropic.team
 domain:chatbotclaude.com
+domain:claude.dev
 domain:intercom.io
 domain:intercomcdn.com
 domain:interface.feedback
