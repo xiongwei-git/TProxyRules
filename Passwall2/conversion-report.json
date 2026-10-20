@@ -46,7 +46,7 @@
     ]
   },
   "GlobalAI.list": {
-    "domains": 307,
+    "domains": 308,
     "ips": 6,
     "skipped": [
       {
@@ -165,17 +165,17 @@
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 511,
+        "line": 512,
         "rule": "PROCESS-NAME,Windsurf",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 512,
+        "line": 513,
         "rule": "PROCESS-NAME,Windsurf.exe",
         "reason": "No equivalent in domain_list/ip_list"
       },
       {
-        "line": 513,
+        "line": 514,
         "rule": "PROCESS-NAME,windsurf",
         "reason": "No equivalent in domain_list/ip_list"
       }
