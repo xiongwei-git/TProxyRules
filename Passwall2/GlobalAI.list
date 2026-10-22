@@ -42,9 +42,12 @@ full:cdn.growthbook.io
 full:cdn.usefathom.com
 full:servd-anthropic-website.b-cdn.net
 full:storage.googleapis.com
+domain://github.com/aprilnea/reverse-engineering-claude-code-antspace
+domain:ant.dev
 domain:anthropic.team
 domain:chatbotclaude.com
 domain:claude.dev
+domain:claudeacademy.com
 domain:intercom.io
 domain:intercomcdn.com
 domain:interface.feedback
