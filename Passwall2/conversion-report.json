@@ -279,13 +279,23 @@
       }
     ]
   },
+  "personal/personalBinance.list": {
+    "domains": 49,
+    "ips": 0,
+    "skipped": []
+  },
   "personal/personalDirect.list": {
     "domains": 6,
     "ips": 0,
     "skipped": []
   },
+  "personal/personalNodeTest.list": {
+    "domains": 1,
+    "ips": 0,
+    "skipped": []
+  },
   "personal/personalProxy.list": {
-    "domains": 21,
+    "domains": 22,
     "ips": 0,
     "skipped": []
   }

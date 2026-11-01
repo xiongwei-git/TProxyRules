@@ -8,6 +8,8 @@
 
 ```ini
 [Remote Rule]
+https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/personal/personalBinance.list, policy=Binance, tag=Personal Binance, enabled=true
+https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/personal/personalNodeTest.list, policy=NodeTest, tag=Personal NodeTest, enabled=true
 https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/personal/personalDirect.list, policy=DIRECT, tag=Personal Direct, enabled=true
 https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/personal/personalProxy.list, policy=Available, tag=Personal Proxy, enabled=true
 https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/YouTube.list, policy=YouTube, tag=YouTube, enabled=true
@@ -17,6 +19,8 @@ https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/Google.list
 https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/Global.list, policy=Available, tag=Global, enabled=true
 https://raw.githubusercontent.com/xiongwei-git/TProxyRules/main/Loon/ProxyGFWlist.list, policy=Available, tag=ProxyGFWlist, enabled=true
 ```
+
+`personalBinance.list` 与 `personalNodeTest.list` 分别使用 `Binance`、`NodeTest` 专用策略；请先在客户端建立对应策略组。Binance 为公开来源合并快照，不参与每日公共规则自动覆盖；更新时重新核对上游。地区筛选、图标和策略组顺序保存在客户端配置，规则列表不包含节点或凭据。
 
 私有域名、个人 IP 和内网规则继续保存在本地 `[Rule]`，兜底 `FINAL` 保留原有策略。规则文件不写策略，由订阅的 `policy=` 指定。IP-CIDR 可以放入个人列表，但公开仓库不得包含私密网络信息。
 
