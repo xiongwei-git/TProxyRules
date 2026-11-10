@@ -106,6 +106,7 @@ full:copilotprodattachments.blob.core.windows.net
 full:gateway.bingviz.microsoft.net
 full:gateway.bingviz.microsoftapp.net
 full:in.appcenter.ms
+full:production-copilot-host-westus.webpubsub.azure.com
 full:self.events.data.microsoft.com
 full:static.cloudflareinsights.com
 full:sydney.bing.com
@@ -306,6 +307,7 @@ domain:windsurf.build
 domain:windsurf.com
 domain:grok.com
 domain:grok.x.com
+domain:grokbot.com
 domain:grokipedia.com
 domain:x.ai
 domain:you.com
